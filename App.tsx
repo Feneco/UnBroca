@@ -37,11 +37,6 @@ function Main() {
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="demo"
-        component={DemoPage}
-        options={{ headerTitle: "DEMO PAGE!" }}
-      />
-      <Stack.Screen
         name="productPage"
         component={ProductPage}
         options={{ headerTitle: "Página da marmita" }}
@@ -59,6 +54,11 @@ export default function App() {
             name="app"
             component={Main}
             options={{ headerShown: false, headerTitle: "Página inicial" }}
+          />
+          <Stack.Screen
+            name="demo"
+            component={DemoPage}
+            options={{ headerTitle: "DEMO PAGE!" }}
           />
         </Drawer.Navigator>
       </NavigationContainer>

@@ -19,9 +19,7 @@ export function MainShopperPage({ navigation }: MainShopperPageProps) {
 
   return (
     <View style={styles.container}>
-      <Pressable onPress={() => navigation.navigate("demo")}>
-        <Header>Escolha sua próxima broca</Header>
-      </Pressable>
+      <Header>Escolha sua próxima broca</Header>
       <SearchBox inputProps={{ onChangeText: setFilter }} />
       <CardsScroll navigation={navigation} productsIDlist={dummyCards} />
     </View>
